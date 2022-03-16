@@ -15,6 +15,7 @@ void create_elem(char fp[100], char sp[100])
     str_cpy(tmp->type, fp);
 
     tmp->parent = current_addr_cell;
+    tmp->children.elems = 0;
 
     queue_add(&(current_addr_cell->children), tmp);
 

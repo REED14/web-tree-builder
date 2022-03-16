@@ -68,8 +68,8 @@ void interpretf(char text_cmd[])
     }
     else if(is_that_str(command, "compile"))
     {
-        fout.open("html_compiled.html");
-        fcss.open("style.css");
+        fout.open("\compiled\html_compiled.html");
+        fcss.open("\compiled\style.css");
 
         fout<<"<!DOCTYPE html>\n"<<"<html>\n";
         fout<<"<head>\n\t<title>RandomPage</title>\n\t<link rel=\"stylesheet\" href=\"style.css\">\n</head>\n\n";
@@ -214,6 +214,13 @@ void interpret(char text_cmd[])
     else if(is_that_str(command, "loadfile "))
     {
         read(fp);
+    }
+    else if(is_that_str(command, "write"))
+    {
+        ofstream fplm;
+        fplm.open("plm.txt");
+        fplm<<"plm";
+        fplm.close();
     }
     else
     {

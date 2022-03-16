@@ -283,6 +283,7 @@ int tabs = 0;
 
 void explore(cell* current_c)
 {
+    //cout<<current_c->id<<" ";
     for(int i=0; i<tabs; i++)
         fout<<'\t';
     fout<<"<"<<current_c->type<<" id=\""<<current_c->id<<'"'<<">\n";
@@ -292,6 +293,7 @@ void explore(cell* current_c)
         node* tmp = current_c->children.current;
         for(int i=0; i<current_c->children.elems; i++)
         {
+            //cout<<current_c->children.elems;
             explore(tmp->web_data);
             tmp = tmp->prev;
         }
