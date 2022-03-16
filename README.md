@@ -4,7 +4,11 @@ This is web page building program without gui. The web page is structured in the
 # Memory Structure
 This is how the HTML tree is structured.
 
+![tree](images/tree.png)
+
 This is how a node of the HTML Tree is structured.
+
+![node](images/node.png)
 
 # Commands(the most important ones)
 ```
@@ -43,3 +47,67 @@ help
 
 Displays all of the commands/functions of the web-tree-builder.
 
+#Example
+
+Tree structure of the HTML
+
+![example](images/Structure.png)
+
+input code:
+
+```
+create div FirstThing
+create div SecondThing
+create div SomethingThing
+select SecondThing
+create p LineOne
+create p LineTwo
+```
+
+HTML Code after "compilation":
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RandomPage</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="Body">
+	<div id="FirstThing">
+	</div>
+	<div id="SecondThing">
+		<p id="LineOne">
+		</p>
+		<p id="LineTwo">
+		</p>
+	</div>
+	<div id="SomethingThing">
+	</div>
+</body>
+</html>
+```
+
+CSS Code after "compilation":
+
+```
+#FirstThing
+{
+}
+#LineOne
+{
+}
+#LineTwo
+{
+}
+#SecondThing
+{
+}
+#SomethingThing
+{
+}
+#Body
+{
+}
+```
