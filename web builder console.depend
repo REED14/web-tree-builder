@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1644766368 source:c:\users\horia\documents\software builds\web buider\web builder console\main.cpp
+	<iostream>
+	<fstream>
+	"text_man.h"
+	"interpreter.h"
+
+1644778490 c:\users\horia\documents\software builds\web buider\web builder console\text_man.h
+
+1647444715 c:\users\horia\documents\software builds\web buider\web builder console\interpreter.h
+	<iostream>
+	<fstream>
+	"text_man.h"
+	"web_tree_man.h"
+
+1645169547 c:\users\horia\documents\software builds\web buider\web builder console\queue_man.h
+	<iostream>
+	<fstream>
+	"text_man.h"
+
+1645130814 c:\users\horia\documents\software builds\web buider\web builder console\web_tree_man.h
+	"queue_man.h"
+
