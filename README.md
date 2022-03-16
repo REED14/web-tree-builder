@@ -1,4 +1,6 @@
 # web-tree-builder
+The executable is in bin/Release
+
 This is web page building program without gui. The web page is structured in the memory as a tree. When you write compile and hit enter the HTML and CSS files will be generated for you.
 
 # Memory Structure
